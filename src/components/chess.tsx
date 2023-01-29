@@ -3,7 +3,7 @@ import {Direction} from "../enums";
 
 export function Chess({data, handleClick}: any) {
     return (
-        <div className="chess" onClick={() => handleClick(data)}>
+        <div className="chess" onClick={(e) => handleClick(data, e)}>
             {data.current === Direction.Front ? (
                 <img
                     className="front"

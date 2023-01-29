@@ -97,7 +97,10 @@ function App() {
         }, 1000)
     }
 
-    function handleClick(data: chess) {
+    function handleClick(data: chess, e: Event) {
+        if (!e.isTrusted) {
+            return alert('不可以作弊哦!')
+        }
         if (!timer.current) {
             startTime()
         }
