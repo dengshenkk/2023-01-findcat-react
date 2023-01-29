@@ -1,0 +1,30 @@
+.chess {
+  width: 150px;
+  height: 150px;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  border: 1px solid #000;
+  overflow: hidden;
+
+  .back {
+    //display: none;
+  }
+
+  img {
+    //width: 150px;
+    //height: 150px;
+    animation: turnOver 1s;
+  }
+}
+
+@keyframes turnOver {
+  1% {
+    transform: rotateY(20deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+
